@@ -1,0 +1,13 @@
+number= input("Insert a positive integer number : ")
+a = list(number)
+x = 0
+if number.isnumeric() and int(number) > 0:
+    for i in a:
+        x += int(i)**len(a)
+    if x == int(number):
+        print("This is an Armstrong number")
+    else:
+        print("This is not an Armstrong number")
+else:
+    print("Insert a valid value")
+    
